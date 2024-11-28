@@ -6,6 +6,6 @@ function insert_Row() {
   const td2 = document.createElement("td");
   td2.innerHTML = "New Cell2";
   tr.append(td1,td2);
-  table.prepend(tr);
+  table.insertBefore(tr, table.children[0]);
   
 }
